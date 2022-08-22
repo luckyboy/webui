@@ -54,7 +54,7 @@ const LogTable: FC<Props> = ({ messages }) => {
                   rowGetter={({ index }) => messages[index]}
                   rowClassName={({ index }) => cssMap[messages[index]?.logLevel]}
                 >
-                  <Column label="Time" dataKey="timestamp" width={100} />
+                  <Column label="Time" dataKey="timestamp" width={120} />
                   <Column label="Level" dataKey="logLevel" width={100} />
                   <Column label="Plugin" dataKey="plugin" width={100} />
                   <Column label="Task" dataKey="task" width={100} />
